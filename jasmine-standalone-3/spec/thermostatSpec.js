@@ -52,14 +52,28 @@ describe('Thermostat', function() {
        expect(thermostat.getCurrentTemprature()).toEqual(25);
      });
 
-     it('throw an error if temrature is above 25', function() {
+     it('throw an error if temrature is above 25 when PSM is on', function() {
         thermostat.switchPowerSavingModeOn();
        expect( function(){ thermostat.up(6) }).toThrow ('limit is 25 when PSM is on!!');
      });
 
-     it('throw an error if temrature is above 32', function() {
+     it('throw an error if temrature is above 32 when PSM is off', function() {
        thermostat.switchPowerSavingModeOff();
        expect( function(){ thermostat.up(13) }).toThrow ('limit is 32 when PSM is off!!');
      });
+   });
+
+   describe('when power saving mode is off', function() {
+     it('has a maximum temprature of 32 degrees', function() {
+       thermostat.switchPowerSavingModeOff();
+       thermostat.up(12)
+       expect(thermostat.getCurrentTemprature()).toEqual(32);
+     });
+   });
+
+   it('can be reset to the default temprature', function() {
+     thermostat.up(5);
+     thermostat.resetTemprature();
+     expect(thermostat.getCurrentTemprature()).toEqual(20);
    });
 });
