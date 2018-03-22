@@ -29,4 +29,8 @@ describe('Thermostat', function() {
 
     expect( function(){ thermostat.down(11) }).toThrow ('is too cold!!');
   });
+
+  it('has power saving mode on by default', function() {
+     expect(thermostat.isPowerSavingModeOn()).toBe(true);
+   });
 });
