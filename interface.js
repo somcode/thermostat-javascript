@@ -31,13 +31,14 @@ $(document).ready(function() {
 
   function updateTemprature() {
     $('#temprature').text(thermostat.temprature);
-    if(thermostat.energyUsage() === 'low-usage') {
-      $('#temprature').css('color', 'green')
-    } else if(thermostat.energyUsage() === 'medium-usage') {
-      $('#temprature').css('color', 'black')
-    } else {
-      $('#temprature').css('color', 'red')
-    }
+    $('#temprature').attr('class', thermostat.energyUsage());
+    // if(thermostat.energyUsage() === 'low-usage') {
+    //   $('#temprature').css('color', 'green')
+    // } else if(thermostat.energyUsage() === 'medium-usage') {
+    //   $('#temprature').css('color', 'black')
+    // } else {
+    //   $('#temprature').css('color', 'red')
+    // }
   };
 
 });
