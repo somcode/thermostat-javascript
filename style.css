@@ -39,6 +39,21 @@ body {
   font-size: 80px;
 }
 
+.e {
+width: 160px;
+height: 30px;
+font-size: 20px;
+border-radius: 10px;
+}
+
+.f {
+  width: 80px;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
 h1 {
   font-size: 50px;
 }
