@@ -32,13 +32,10 @@ $(document).ready(function() {
   function updateTemprature() {
     $('#temprature').text(thermostat.temprature);
     $('#temprature').attr('class', thermostat.energyUsage());
-    // if(thermostat.energyUsage() === 'low-usage') {
-    //   $('#temprature').css('color', 'green')
-    // } else if(thermostat.energyUsage() === 'medium-usage') {
-    //   $('#temprature').css('color', 'black')
-    // } else {
-    //   $('#temprature').css('color', 'red')
-    // }
   };
+
+  $.get('http://api.openweathermap.org/data/2.5/weather?q=London&appid=a3d9eb01d4de82b9b8d0849ef604dbed&units=metric', function(data) {
+    $('#current-temperature').text(data.main.temp);
+  })
 
 });

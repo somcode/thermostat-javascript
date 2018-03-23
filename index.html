@@ -3,6 +3,7 @@
 <head>
   <title>Thermostat</title>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="jasmine-standalone-3/src/thermostat.js"></script>
 <script src="interface.js"></script>
 <link href="style.css"  type="text/css"  rel="stylesheet">
 </head>
@@ -10,14 +11,20 @@
   <section>
     <h1 id="temprature"></h1>
     <p>
-      <button id="temprature-up">+</button>
-      <button id="temprature-down">-</button>
-      <button id="temprature-reset">reset</button></br>
-      power saving mode is <span id="power-saving-status">on</span></br>
-      <button id="powersaving-on">PSM on </button>
-      <button id="powersaving-off">PSM off</button>
+      <button id="temprature-up" class="a">+</button>
+      <button id="temprature-down" class="a">-</button>
+      <button id="temprature-reset" class="a">reset</button></br>
+      <div class="c">power saving mode is:</div>
+      <span id="power-saving-status" class="d">on</span></br>
+      <button id="powersaving-on" class="b">PSM on </button>
+      <button id="powersaving-off" class="b">PSM off</button>
     </p>
   </section>
-  <script src="jasmine-standalone-3/src/thermostat.js"></script>
+
+  <section>
+    <h1>Current temperature: <span id="current-temperature"></span></h1>
+  </section>
+
+
 </body>
 </html>

@@ -9,3 +9,36 @@
 .high-usage {
   color: red;
 }
+
+body {
+  background-image: url(image/image.jpg);
+  text-align: center;
+}
+
+.a {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #afb9c9;
+  font-size: 15px;
+}
+
+.b {
+  width: 100px;
+  height: 60px;
+  border-radius: 40px;
+  background-color: #afb9c9;
+  font-size: 15px;
+}
+
+.c {
+  font-size: 30px;
+}
+
+.d {
+  font-size: 80px;
+}
+
+h1 {
+  font-size: 50px;
+}
