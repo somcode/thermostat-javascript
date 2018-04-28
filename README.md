@@ -34,4 +34,4 @@ Open index.html in your browser
 Open SpecRunner.html in your browser
 ```
 
-<img width="1436" alt="screen shot 2018-04-28 at 20 53 44" src="https://user-images.githubusercontent.com/34063826/39400756-92b6ee14-4b2e-11e8-8bca-8407cf5b1107.png">
+![screen shot 2018-04-28 at 22 47 50](https://user-images.githubusercontent.com/34063826/39401157-8cd568e2-4b36-11e8-8593-eb91bb7e6781.png)
