@@ -2,7 +2,6 @@
 
 
 ## Specification:
----------------
 
 * The thermostat's default temperature is 20 degrees
 * You can increase the temperature with + button
